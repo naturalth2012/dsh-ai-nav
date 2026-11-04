@@ -1,0 +1,7 @@
+- insert:
+    - id: ai-nav
+      name: 'dsh-ai-nav'
+      config:
+        engine: metaso
+        showSelfHost: true
+        favicons: true

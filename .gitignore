@@ -1,0 +1,7 @@
+node_modules/
+*.log
+*.tmp
+.before-publish
+data.json
+.DS_Store
+Thumbs.db

@@ -1,0 +1,60 @@
+{
+  "name": "dsh-ai-nav",
+  "version": "1.0.0",
+  "description": "Hao123-style navigation page for AI sites and knowledge bases: a search box, a tile board of verified entries, per-site search, bookmark import, a need-based recommender, and agent tools.",
+  "license": "MIT",
+  "author": "naturalth2012",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naturalth2012/dsh-ai-nav.git"
+  },
+  "homepage": "https://github.com/naturalth2012/dsh-ai-nav",
+  "bugs": {
+    "url": "https://github.com/naturalth2012/dsh-ai-nav/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "navigation",
+    "ai-sites",
+    "directory"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./catalog": "./catalog.js",
+    "./search": "./search.js",
+    "./recommend": "./recommend.js",
+    "./store": "./store.js",
+    "./client": "./client.js",
+    "./icon-policy": "./icon.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "catalog.js",
+    "search.js",
+    "recommend.js",
+    "store.js",
+    "icon.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "selfcheck": "node scripts/selfcheck.mjs"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

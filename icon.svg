@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="AI navigation directory">
+  <defs>
+    <linearGradient id="ainav-bg" x1="5" y1="4" x2="59" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1d2b4a"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="ainav-lit" x1="22" y1="22" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4f8bff"/>
+      <stop offset="1" stop-color="#2f6ae0"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="16" fill="url(#ainav-bg)"/>
+
+  <!-- the tile board, nine seats with the centre one lit -->
+  <g>
+    <rect x="14" y="14" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="27" y="14" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="40" y="14" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="14" y="27" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="27" y="27" width="10" height="10" rx="3" fill="url(#ainav-lit)"/>
+    <rect x="40" y="27" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="14" y="40" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="27" y="40" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+    <rect x="40" y="40" width="10" height="10" rx="3" fill="#7d92b8" opacity="0.45"/>
+  </g>
+
+  <!-- search lens over the lit tile -->
+  <circle cx="32" cy="32" r="3.4" fill="#ffffff" opacity="0.95"/>
+  <path d="m34.6 34.6 3.4 3.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.95"/>
+</svg>
