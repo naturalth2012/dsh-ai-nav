@@ -22,6 +22,10 @@
     "directory"
   ],
   "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-0 <0.3.0-0"
+  },
   "exports": {
     ".": "./index.js",
     "./catalog": "./catalog.js",
