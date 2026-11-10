@@ -330,6 +330,12 @@ const RAW = [
 
   /* ---- 编程与 Agent --------------------------------------------------- */
   {
+    id: 'agent-qa', name: 'agent-qa', url: 'https://vostride.com', cat: 'dev',
+    desc: '自然语言测网页与手机，持久 memidex 记忆与验证式自我改进',
+    tags: ['QA', 'Android', 'iOS', 'CLI', 'MCP'], region: 'global', selfHost: true,
+    aliases: ['vostride', 'agentqa', '自然语言测试'],
+  },
+  {
     id: 'cursor', name: 'Cursor', url: 'https://cursor.com', cat: 'dev',
     desc: 'VS Code 内核的 AI 编辑器，全库补全与改写',
     tags: ['编辑器', '补全'], region: 'global', hot: true, aliases: ['cur'],
